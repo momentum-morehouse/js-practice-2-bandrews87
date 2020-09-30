@@ -1,8 +1,15 @@
 // 1. Create a function called "remove" that takes an array and a potential
-// member of the array, and returns a new array with that member removed.
+// member of the array, and returns a new array with that member removed. 
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-//
+function remove(array,potential) {
+let indexa = array.indexOf(potential);
+//find the potential from the array 
+//find out where potential is located  
+//Remove potential from the array 
+let newArray=array.splice(indexa,1);     
+return newArray;
+}
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
